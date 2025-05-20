@@ -1,6 +1,9 @@
 ## 🚀 KaiNFT Marketplace
 
 Kai NFT Marketplace is a decentralized platform for trading ERC-1155 NFTs and fungible tokens (FTs) on the Ethereum blockchain. The project includes custom smart contracts for NFT minting, a marketplace with fee support, a gacha (lucky draw) system, and robust security mechanisms. It is built using Solidity and Hardhat, and leverages OpenZeppelin for security and standardization.
+📸 **Want to see it in action?**  
+Check out our on-chain demo here:  
+👉 [`📊 Live Transaction Examples`](./docs/demo.md)
 
 ### 🔧 Tech Stack
 - Solidity (ERC-1155, ERC-20)
