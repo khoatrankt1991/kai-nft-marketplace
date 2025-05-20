@@ -1,0 +1,8 @@
+{
+  "optimism-sepolia": {
+    "KaiMarketplace1155": {
+      "address": "0x3B118727695F353200B370E8e06001cCCc76D394",
+      "startBlock": 27959751
+    }
+  }
+}
