@@ -1,0 +1,8 @@
+{
+  "optimism-sepolia": {
+    "KaiNftToken": {
+      "address": "0xA2555F09b2aCC3EabD2feee5e2AC36b5Da066e61",
+      "startBlock": 27955574
+    }
+  }
+}

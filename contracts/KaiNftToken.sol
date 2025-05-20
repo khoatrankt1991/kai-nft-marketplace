@@ -13,6 +13,7 @@ contract KaiNftToken is ERC1155, Ownable {
     /// @dev Mapping from token ID to token URI
     mapping(uint256 => string) private _tokenURIs;
 
+    event TokenMinted(address indexed to, uint256 indexed tokenId, uint256 amount, string uri);
     /**
      * @dev Constructor with empty base URI.
      * We override the `uri()` function to use per-token URIs instead.
@@ -35,6 +36,7 @@ contract KaiNftToken is ERC1155, Ownable {
     ) external onlyOwner {
         _mint(to, tokenId, amount, "");
         _setTokenURI(tokenId, uri_);
+        emit TokenMinted(to, tokenId, amount, uri_);
     }
 
     /**
