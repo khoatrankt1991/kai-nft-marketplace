@@ -2,6 +2,7 @@ import { expect } from "chai";
 import { ethers } from "hardhat";
 import { KAI, KaiNftToken, KaiGacha } from "../typechain-types";
 
+// owner() have to setApprovalForAll() cho kaiGacha
 describe("KaiGacha", function () {
   let kaiToken: KAI;
   let kaiNft: KaiNftToken;
@@ -26,6 +27,7 @@ describe("KaiGacha", function () {
     const kaiGachaAddress = await kaiGacha.getAddress();
     // Mint NFT to owner
     await kaiNft.mint(owner.address, tokenId1, 10, "ipfs://token1");
+    // owner() have to setApprovalForAll() cho kaiGacha
     await kaiNft.setApprovalForAll(kaiGachaAddress, true);
 
     // Transfer token to user
