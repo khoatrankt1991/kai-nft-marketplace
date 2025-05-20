@@ -1,6 +1,19 @@
-# Kai NFT Marketplace
+## 🚀 KaiNFT Marketplace
 
 Kai NFT Marketplace is a decentralized platform for trading ERC-1155 NFTs and fungible tokens (FTs) on the Ethereum blockchain. The project includes custom smart contracts for NFT minting, a marketplace with fee support, a gacha (lucky draw) system, and robust security mechanisms. It is built using Solidity and Hardhat, and leverages OpenZeppelin for security and standardization.
+
+### 🔧 Tech Stack
+- Solidity (ERC-1155, ERC-20)
+- Hardhat + TypeScript
+- The Graph (Subgraph for on-chain events)
+- Pinata + IPFS for metadata
+
+## Features
+- **KaiNftToken**: ERC-1155 contract supporting both NFTs and FTs, with per-token metadata URIs and owner-only minting.
+- **KaiMarketplace1155**: Marketplace contract for listing, buying, and canceling NFT sales, with fee distribution to a treasury address and reentrancy protection.
+- **KaiGacha**: Gacha contract allowing users to spend KAI tokens for a chance to win NFTs, with configurable draw price and reward chances.
+- **KAI Token**: ERC-20 token used as the main currency for marketplace and gacha operations.
+
 
 ## Advantages & Security Features
 
@@ -25,12 +38,6 @@ The marketplace contract (`KaiMarketplace1155`) uses OpenZeppelin's `ReentrancyG
 **Benefits:**
 - Protects user funds from one of the most common and dangerous smart contract attacks.
 - Increases trust and reliability for users and integrators.
-
-## Features
-- **KaiNftToken**: ERC-1155 contract supporting both NFTs and FTs, with per-token metadata URIs and owner-only minting.
-- **KaiMarketplace1155**: Marketplace contract for listing, buying, and canceling NFT sales, with fee distribution to a treasury address and reentrancy protection.
-- **KaiGacha**: Gacha contract allowing users to spend KAI tokens for a chance to win NFTs, with configurable draw price and reward chances.
-- **KAI Token**: ERC-20 token used as the main currency for marketplace and gacha operations.
 
 ## Subgraph (The Graph Integration)
 
